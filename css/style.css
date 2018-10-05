@@ -1,75 +1,43 @@
 #animacja {
-position: relative;
-width: 400px;
-height: 400px;
-background: black;
-font-size: 80px;
-font-family:monospace;
-color: white;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    left: 50%;
+    background: black;
+    font-size: 80px;
+    font-family: monospace;
+    color: white;
+    
 }
 
 .liczby {
     position: absolute;
     background-color: black;
+   
+    
+    
 }
 
 #animacja .liczby {
 
-animation-name: animacja;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 22s;
-animation-direction: normal;
+    animation-name: animacja;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 22s;
+    animation-direction: normal;
     
 }
 
 @keyframes animacja {
-    
-      from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-    
-/*
-0% {
-opacity:1 0 0 0 0 0 0 0 0 0 0;
-}
-9% {
-opacity:0 1 0 0 0 0 0 0 0 0 0 ;
-}    
-18% {
-opacity:0 0 1 0 0 0 0 0 0 0 0 ;
-}
-27% {
-opacity:0 1;
-}
-36% {
-opacity:0 1;
-}
-45% {
-opacity:0 1;
-}   
-54% {
-opacity:0 1;
-}
-63% {
-opacity:0 1;
-}
-72% {
-opacity:0 1;
-}
-81% {
-opacity:0 1;
-}
-100% {
-opacity: 0 0 0 0 0 0 0 0 0 0 1;
-}
-}
-*/
 
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.3;
+    }
+}
 
 .liczby:nth-child(2){
     animation-delay: 2s;
