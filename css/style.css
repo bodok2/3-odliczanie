@@ -1,0 +1,96 @@
+#animacja {
+position: relative;
+width: 400px;
+height: 400px;
+background: black;
+font-size: 80px;
+font-family:monospace;
+color: white;
+}
+
+.liczby {
+    position: absolute;
+    background-color: black;
+}
+
+#animacja .liczby {
+
+animation-name: animacja;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 22s;
+animation-direction: normal;
+    
+}
+
+@keyframes animacja {
+    
+      from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+    
+/*
+0% {
+opacity:1 0 0 0 0 0 0 0 0 0 0;
+}
+9% {
+opacity:0 1 0 0 0 0 0 0 0 0 0 ;
+}    
+18% {
+opacity:0 0 1 0 0 0 0 0 0 0 0 ;
+}
+27% {
+opacity:0 1;
+}
+36% {
+opacity:0 1;
+}
+45% {
+opacity:0 1;
+}   
+54% {
+opacity:0 1;
+}
+63% {
+opacity:0 1;
+}
+72% {
+opacity:0 1;
+}
+81% {
+opacity:0 1;
+}
+100% {
+opacity: 0 0 0 0 0 0 0 0 0 0 1;
+}
+}
+*/
+
+
+.liczby:nth-child(2){
+    animation-delay: 2s;
+} 
+.liczby:nth-child(3){
+    animation-delay: 4s;
+} 
+.liczby:nth-child(4){
+    animation-delay: 6s;
+} .liczby:nth-child(5){
+    animation-delay: 8s;
+} .liczby:nth-child(6){
+    animation-delay: 10s;
+} .liczby:nth-child(7){
+    animation-delay: 12s;
+} .liczby:nth-child(8){
+    animation-delay: 14s;
+} .liczby:nth-child(9){
+    animation-delay: 16s;
+} .liczby:nth-child(10){
+    animation-delay: 18s;
+} .liczby:nth-child(11){
+    animation-delay: 20s;
+}
